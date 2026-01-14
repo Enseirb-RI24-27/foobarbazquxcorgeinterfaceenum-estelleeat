@@ -25,7 +25,7 @@ public class Foo implements IFoo {
         return this.bars;
     }
 
-    public void addBaz(IBar bar) {
+    public void addBar(IBar bar) {
         this.bars.add(bar);
     }
 
