@@ -1,5 +1,5 @@
 package com.jad;
 
 public interface IQux {
-    public void doSomethingLikeABar();
+    public void doSomethingLikeAQux();
 }

@@ -1,5 +1,6 @@
 package com.jad;
 
 public interface IFoo {
-    ICorge setCorge(Corge corge);
+    ICorge getCorge();
+    void setCorge(ICorge corge);
 }

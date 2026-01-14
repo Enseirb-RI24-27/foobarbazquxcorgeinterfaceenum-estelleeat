@@ -2,7 +2,7 @@ package com.jad;
 
 public class Qux implements IQux{
     @Override
-    public void doSomethingLikeABar() {
+    public void doSomethingLikeAQux() {
         System.out.println("dosomethinglikeabar");
     }
 }
