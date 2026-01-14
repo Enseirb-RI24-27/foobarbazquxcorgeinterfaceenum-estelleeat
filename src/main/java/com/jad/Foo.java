@@ -3,12 +3,19 @@ package com.jad;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Foo implements IFoo{
-    public IBar getBar() {
-        return this.bar;
+public class Foo implements IFoo {
+    private IBaz baz;
+    private List<IBar> bars = new ArrayList<>();
+    private IQux qux;
+    private ICorge corge;
+
+    public Foo(IBaz baz) {
+        this.baz = baz;
     }
 
-    private IBar bar ;
+    public IBaz getBaz() {
+        return this.baz;
+    }
 
     public IQux getQux() {
         return this.qux;
@@ -18,14 +25,7 @@ public class Foo implements IFoo{
         return this.bars;
     }
 
-    private List<IBar> bars = new ArrayList<>();
-    private IQux qux;
-    private ICorge corge;
-
-    public Foo(IBar bar) {
-        this.bar = bar;
-    }
-    public void addBaz(IBar bar){
+    public void addBaz(IBar bar) {
         this.bars.add(bar);
     }
 
