@@ -1,9 +1,9 @@
 package com.jad;
 
 public enum EBaz implements IBaz {
-    Baz1("BAZ1"),
-    Baz2("BAZ2"),
-    Baz3("BAZ3");
+    BAZ1("BAZ1"),
+    BAZ2("BAZ2"),
+    BAZ3("BAZ3");
 
     private String name;
 
