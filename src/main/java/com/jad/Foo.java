@@ -4,16 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Foo implements IFoo{
+    public IBar getBar() {
+        return this.bar;
+    }
+
     private IBar bar ;
-    private List<EBaz> bazs = new ArrayList<>();
+
+    public IQux getQux() {
+        return this.qux;
+    }
+
+    public List<IBar> getBars() {
+        return this.bars;
+    }
+
+    private List<IBar> bars = new ArrayList<>();
     private IQux qux;
     private ICorge corge;
 
     public Foo(IBar bar) {
         this.bar = bar;
     }
-    public void addBaz(EBaz baz){
-        this.bazs.add(baz);
+    public void addBaz(IBar bar){
+        this.bars.add(bar);
     }
 
     @Override
