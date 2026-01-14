@@ -31,7 +31,7 @@ public class Foo implements IFoo {
 
     @Override
     public ICorge getCorge() {
-        return null;
+        return this.corge;
     }
 
     @Override
