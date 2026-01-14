@@ -36,6 +36,6 @@ public class Foo implements IFoo {
 
     @Override
     public void setCorge(ICorge corge) {
-
+        this.corge = corge;
     }
 }
